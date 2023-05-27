@@ -5,7 +5,7 @@ from Cython.Build import cythonize
 
 basdir = os.path.dirname(os.path.realpath(__file__))
 
-
+long_description = ""
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
@@ -16,7 +16,7 @@ extensions = [
 
 setup(
     name="sword2vec",
-    version="3.2.1-beta",
+    version="3.2.3-beta",
     author="Raja Azian",
     author_email="rajaazian08@gmail.com",
     description="A simple skipgram word2vec implementations",
