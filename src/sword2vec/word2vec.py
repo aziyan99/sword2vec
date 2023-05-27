@@ -14,15 +14,10 @@ import datetime
 import time
 import gzip
 import gc
+import pickle
+from . import helpers
 
 np.random.seed(1)
-
-try:
-    import _pickle as pickle
-except:
-    import pickle
-
-import helpers
 
 
 class SkipGramWord2Vec:
@@ -155,7 +150,7 @@ class SkipGramWord2Vec:
                 )
 
         except KeyboardInterrupt:
-            print("\nTraining interrupted by user.")
+            logging.info(f"\nTraining interrupted by user.")
             return
 
     # not calculating cosine similarity it just perform regular predict through forward_pass()

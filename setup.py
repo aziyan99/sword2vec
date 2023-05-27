@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup, find_packages, Extension
 import numpy
 import os
 from Cython.Build import cythonize
@@ -9,10 +9,14 @@ basdir = os.path.dirname(os.path.realpath(__file__))
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
+extensions = [
+    Extension("sword2vec.helpers", [os.path.join(basdir, "src/sword2vec/helpers.pyx")])
+]
+
 
 setup(
     name="sword2vec",
-    version="0.0.1",
+    version="3.2.1-dev",
     author="Raja Azian",
     author_email="rajaazian08@gmail.com",
     description="A simple skipgram word2vec implementations",
@@ -36,6 +40,6 @@ setup(
     extras_require={
         "dev": ["pytest>=7.0", "twine>=4.0.2"],
     },
-    ext_modules=cythonize(os.path.join(basdir, "src/sword2vec/helpers.pyx")),
+    ext_modules=cythonize(extensions),
     include_dirs=[numpy.get_include()],
 )
