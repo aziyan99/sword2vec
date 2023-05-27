@@ -168,3 +168,4 @@ datase*
 *.gz
 model*
 *stop**
+.pypirc
