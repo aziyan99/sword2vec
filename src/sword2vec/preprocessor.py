@@ -12,18 +12,19 @@ class Preprocessor:
     lemmatization, and lowercasing.
 
     Parameters:
+    - stopword_file: An path to list of stopwords in txt file
     - tokenizer: An instance of a tokenizer class that implements a 'tokenize' method.
     - stop_word_remover: An instance of a stop word remover class that implements a 'remove_stop_words' method.
     - lemmatizer: An instance of a lemmatizer class that implements a 'lemmatize_words' method.
     - lower_caser: An instance of a lowercaser class that implements a 'lower_case_words' method.
     """
 
-    def __init__(self):
+    def __init__(self, stopword_file=None):
         self.tokenizer = None
         self.stop_word_remover = None
         self.lemmatizer = None
         self.lower_caser = None
-        self.stop_word_file_path = "./preprocess/id_stopword.txt"
+        self.stopword_file = stopword_file
 
     def set_tokenizer(self, tokenizer):
         """
@@ -75,9 +76,11 @@ class Preprocessor:
         Returns:
         - tokens: A list of tokens with stop words removed.
         """
-        with open(self.stop_word_file_path, "r") as f:
-            stop_words = set(f.read().splitlines())
-        tokens = [token for token in tokens if token.lower() not in stop_words]
+        tokens = []
+        if self.stopword_file != None:
+            with open(self.stopword_file, "r") as f:
+                stop_words = set(f.read().splitlines())
+            tokens = [token for token in tokens if token.lower() not in stop_words]
         return tokens
 
     def preprocess(self, text):

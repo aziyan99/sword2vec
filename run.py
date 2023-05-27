@@ -1,6 +1,12 @@
 from sword2vec import SkipGramWord2Vec
 
-model = SkipGramWord2Vec(window_size=2, learning_rate=0.025, embedding_dim=2, epochs=5)
+model = SkipGramWord2Vec(
+    window_size=2,
+    learning_rate=0.025,
+    embedding_dim=2,
+    epochs=5,
+    stopword_file="./id_stopword.txt",
+)
 
 lines = []
 with open("./datasets_judul_buku_full.txt", encoding="utf8") as f:

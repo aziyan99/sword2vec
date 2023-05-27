@@ -33,7 +33,14 @@ class SkipGramWord2Vec:
     - epochs (int): The number of training epochs. Default is 10.
     """
 
-    def __init__(self, window_size=2, learning_rate=0.01, embedding_dim=100, epochs=10):
+    def __init__(
+        self,
+        window_size=2,
+        learning_rate=0.01,
+        embedding_dim=100,
+        epochs=10,
+        stopword_file=None,
+    ):
         """
         Initializes the SkipGramWord2Vec object with default or specified parameters.
 
@@ -42,6 +49,7 @@ class SkipGramWord2Vec:
         - learning_rate (float): The learning rate for the model's training. Default is 0.01.
         - embedding_dim (int): The dimensionality of the word embeddings. Default is 100.
         - epochs (int): The number of training epochs. Default is 10.
+        - stopword_file: An path to list of stopwords in txt file
         """
         self.window_size = window_size
         self.learning_rate = learning_rate
@@ -55,7 +63,7 @@ class SkipGramWord2Vec:
         self.matrix = []
         self.vocabulary = []
         self.preprocessor = (
-            Preprocessor()
+            Preprocessor(stopword_file=stopword_file)
             .set_tokenizer(Tokenizer())
             .set_stop_word_remover(StopWordRemover())
             .set_lower_caser(LowerCaser())
@@ -68,7 +76,7 @@ class SkipGramWord2Vec:
         Parameters:
         - lines (list): A list of strings representing the text lines.
         """
-        logging.info("Preprocessing vocabularies")
+        logging.info("| Preprocessing vocabularies")
         for title in lines:
             tokens = self.preprocessor.preprocess(title)
             for word in tokens:
@@ -83,7 +91,7 @@ class SkipGramWord2Vec:
         """
         self.word_to_idx = {}
         self.idx_to_word = {}
-        logging.info("Building vocabularies")
+        logging.info("| Building vocabularies")
         for idx, word in enumerate(text_array):
             if word not in self.word_to_idx:
                 self.word_to_idx[word] = len(self.word_to_idx)
@@ -97,7 +105,7 @@ class SkipGramWord2Vec:
         Parameters:
         - text_array (list): A list of words representing the text.
         """
-        logging.info("Building matrix")
+        logging.info("| Building matrix")
         for idx, word in enumerate(text_array):
             center_vec = [0] * len(self.word_to_idx)
             center_vec[self.word_to_idx[word]] = 1
@@ -150,22 +158,22 @@ class SkipGramWord2Vec:
         Parameters:
         - lines (list): A list of strings representing the text lines.
         """
-        logging.info("\n|------------------------------------")
+        logging.info("|-------------------------------")
         logging.info("| Preprocess")
         logging.info("|---------------------------------")
         logging.info("|")
-        logging.info("|\n")
+        logging.info("|")
 
         self.preprocess_vocab(lines)
         self.build_vocab(self.vocabulary)
 
-        logging.info("\n|------------------------------------")
+        logging.info("|-------------------------------")
         logging.info("| Summary")
         logging.info("|---------------------------------")
         logging.info("| Total line: " + str(len(lines)))
         logging.info("| Total vocabulary: " + str(len(self.vocabulary)))
         logging.info("|")
-        logging.info("|\n")
+        logging.info("|")
 
         self.w1 = np.round(
             np.random.uniform(-1, 1, (len(self.word_to_idx), self.embedding_dim)), 2
@@ -174,14 +182,14 @@ class SkipGramWord2Vec:
             np.random.uniform(-1, 1, (self.embedding_dim, len(self.word_to_idx))), 2
         )
 
-        logging.info("Training")
+        logging.info("| Training")
 
         try:
             for e in range(self.epochs):
                 total_loss = 0
                 start_time = time.time()
 
-                logging.info(f"Epoch {e + 1} start")
+                logging.info(f"| Epoch {e + 1} start")
 
                 for center_vec, context_vec in self.one_hot_encoding_streamable(
                     self.vocabulary
@@ -197,11 +205,11 @@ class SkipGramWord2Vec:
                 self.history[e] = total_loss
 
                 logging.info(
-                    f"Epoch {e + 1} Execution Time: {time.time() - start_time} seconds"
+                    f"| Epoch {e + 1} Execution Time: {time.time() - start_time} seconds"
                 )
 
         except KeyboardInterrupt:
-            logging.info(f"\nTraining interrupted by user.")
+            logging.info(f"\n| Training interrupted by user.")
             return
 
     # not calculating cosine similarity it just perform regular predict through forward_pass()
@@ -259,7 +267,7 @@ class SkipGramWord2Vec:
         Parameters:
         - filename (str): The name of the file to save the model. If not provided, a timestamped filename will be used.
         """
-        logging.info("Saving model")
+        logging.info("| Saving model")
         if filename is None:
             current_time = datetime.datetime.now().strftime("%Y%m%d%H%M")
             filename = f"{current_time}.pkl"
@@ -288,7 +296,7 @@ class SkipGramWord2Vec:
         Parameters:
         - filename (str): The name of the file to save the compressed model. If not provided, a timestamped filename will be used.
         """
-        logging.info("Saving compressed model")
+        logging.info("| Saving compressed model")
         gc.disable()
         if filename is None:
             current_time = datetime.datetime.now().strftime("%Y%m%d%H%M")
@@ -323,7 +331,7 @@ class SkipGramWord2Vec:
         - model (SkipGramWord2Vec): The loaded SkipGramWord2Vec model.
         """
         try:
-            logging.info("Load model")
+            logging.info("| Load model")
             with open(filename, "rb") as file:
                 model_data = pickle.load(file)
 
@@ -357,7 +365,7 @@ class SkipGramWord2Vec:
         - model (SkipGramWord2Vec): The loaded SkipGramWord2Vec model.
         """
         try:
-            logging.info("Load compressed model")
+            logging.info("| Load compressed model")
             with gzip.open(filename, "rb") as file:
                 model_data = pickle.load(file)
 
@@ -377,4 +385,4 @@ class SkipGramWord2Vec:
 
             return model
         except FileNotFoundError:
-            logging.warning(f"{filename}'s unknown.")
+            logging.warning(f"| {filename}'s unknown.")

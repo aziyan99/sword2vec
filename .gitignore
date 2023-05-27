@@ -167,3 +167,4 @@ datase*
 *.pkl 
 *.gz
 model*
+*stop**
