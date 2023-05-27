@@ -162,3 +162,8 @@ cython_debug/
 
 **/__pycache__/
 .vscode
+
+datase*
+*.pkl 
+*.gz
+model*
