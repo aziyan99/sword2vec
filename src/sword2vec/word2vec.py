@@ -21,7 +21,28 @@ np.random.seed(1)
 
 
 class SkipGramWord2Vec:
+    """
+    A class representing the Skip-Gram Word2Vec model.
+
+    The Skip-Gram Word2Vec model is a popular algorithm for learning word embeddings from a corpus of text data.
+
+    Parameters:
+    - window_size (int): The size of the context window for generating word pairs. Default is 2.
+    - learning_rate (float): The learning rate for the model's training. Default is 0.01.
+    - embedding_dim (int): The dimensionality of the word embeddings. Default is 100.
+    - epochs (int): The number of training epochs. Default is 10.
+    """
+
     def __init__(self, window_size=2, learning_rate=0.01, embedding_dim=100, epochs=10):
+        """
+        Initializes the SkipGramWord2Vec object with default or specified parameters.
+
+        Parameters:
+        - window_size (int): The size of the context window for generating word pairs. Default is 2.
+        - learning_rate (float): The learning rate for the model's training. Default is 0.01.
+        - embedding_dim (int): The dimensionality of the word embeddings. Default is 100.
+        - epochs (int): The number of training epochs. Default is 10.
+        """
         self.window_size = window_size
         self.learning_rate = learning_rate
         self.embedding_dim = embedding_dim
@@ -41,6 +62,12 @@ class SkipGramWord2Vec:
         )
 
     def preprocess_vocab(self, lines):
+        """
+        Preprocesses the given lines to extract the vocabulary.
+
+        Parameters:
+        - lines (list): A list of strings representing the text lines.
+        """
         logging.info("Preprocessing vocabularies")
         for title in lines:
             tokens = self.preprocessor.preprocess(title)
@@ -48,6 +75,12 @@ class SkipGramWord2Vec:
                 self.vocabulary.append(word)
 
     def build_vocab(self, text_array):
+        """
+        Builds the word-to-index and index-to-word vocabulary mappings.
+
+        Parameters:
+        - text_array (list): A list of words representing the text.
+        """
         self.word_to_idx = {}
         self.idx_to_word = {}
         logging.info("Building vocabularies")
@@ -58,6 +91,12 @@ class SkipGramWord2Vec:
         self.vocabulary = list(self.word_to_idx.keys())
 
     def one_hot_encoding(self, text_array):
+        """
+        Converts the text array into one-hot encoded vectors.
+
+        Parameters:
+        - text_array (list): A list of words representing the text.
+        """
         logging.info("Building matrix")
         for idx, word in enumerate(text_array):
             center_vec = [0] * len(self.word_to_idx)
@@ -80,6 +119,12 @@ class SkipGramWord2Vec:
             self.matrix.append([center_vec, context_vec])
 
     def one_hot_encoding_streamable(self, text_array):
+        """
+        A generator that yields one-hot encoded center vectors and context matrices.
+
+        Parameters:
+        - text_array (list): A list of words representing the text.
+        """
         for idx, word in enumerate(text_array):
             center_vec = np.zeros(len(self.word_to_idx))
             center_vec[self.word_to_idx[word]] = 1
@@ -99,22 +144,28 @@ class SkipGramWord2Vec:
             yield center_vec, context_vec
 
     def train(self, lines):
-        print("\n|------------------------------------")
-        print("| Preprocess")
-        print("|---------------------------------")
-        print("|")
-        print("|\n")
+        """
+        Trains the Skip-Gram Word2Vec model on the given lines of text.
+
+        Parameters:
+        - lines (list): A list of strings representing the text lines.
+        """
+        logging.info("\n|------------------------------------")
+        logging.info("| Preprocess")
+        logging.info("|---------------------------------")
+        logging.info("|")
+        logging.info("|\n")
 
         self.preprocess_vocab(lines)
         self.build_vocab(self.vocabulary)
 
-        print("\n|------------------------------------")
-        print("| Summary")
-        print("|---------------------------------")
-        print("| Total line: " + str(len(lines)))
-        print("| Total vocabulary: " + str(len(self.vocabulary)))
-        print("|")
-        print("|\n")
+        logging.info("\n|------------------------------------")
+        logging.info("| Summary")
+        logging.info("|---------------------------------")
+        logging.info("| Total line: " + str(len(lines)))
+        logging.info("| Total vocabulary: " + str(len(self.vocabulary)))
+        logging.info("|")
+        logging.info("|\n")
 
         self.w1 = np.round(
             np.random.uniform(-1, 1, (len(self.word_to_idx), self.embedding_dim)), 2
@@ -155,6 +206,13 @@ class SkipGramWord2Vec:
 
     # not calculating cosine similarity it just perform regular predict through forward_pass()
     def predict(self, word, topn=2):
+        """
+        Predicts the most probable words given a target word.
+
+        Parameters:
+        - word (str): The target word for prediction.
+        - topn (int): The number of top words to return. Default is 2.
+        """
         word = word.lower()
         center_vec = [0] * len(self.word_to_idx)
         center_vec[self.word_to_idx[word]] = 1
@@ -164,6 +222,13 @@ class SkipGramWord2Vec:
         return [self.idx_to_word[w] for w in most_likely_idxs]
 
     def search_similar_words(self, word, topn=10):
+        """
+        Searches for the most similar words to the given word based on learned word embeddings.
+
+        Parameters:
+        - word (str): The word to search for similar words.
+        - topn (int): The number of top similar words to return. Default is 10.
+        """
         try:
             word_embedding = self.w1[self.word_to_idx[word]]
             word_embeddings = self.w1
@@ -188,6 +253,12 @@ class SkipGramWord2Vec:
             logging.warning(f"{word}'s unknown.")
 
     def save_model(self, filename=None):
+        """
+        Saves the trained model to a pickle file.
+
+        Parameters:
+        - filename (str): The name of the file to save the model. If not provided, a timestamped filename will be used.
+        """
         logging.info("Saving model")
         if filename is None:
             current_time = datetime.datetime.now().strftime("%Y%m%d%H%M")
@@ -211,6 +282,12 @@ class SkipGramWord2Vec:
             pickle.dump(model_data, file)
 
     def save_compressed_model(self, filename=None):
+        """
+        Saves the trained model to a compressed gzip file.
+
+        Parameters:
+        - filename (str): The name of the file to save the compressed model. If not provided, a timestamped filename will be used.
+        """
         logging.info("Saving compressed model")
         gc.disable()
         if filename is None:
@@ -236,6 +313,15 @@ class SkipGramWord2Vec:
 
     @staticmethod
     def load_model(filename):
+        """
+        Loads a saved model from a pickle file.
+
+        Parameters:
+        - filename (str): The name of the file to load the model from.
+
+        Returns:
+        - model (SkipGramWord2Vec): The loaded SkipGramWord2Vec model.
+        """
         try:
             logging.info("Load model")
             with open(filename, "rb") as file:
@@ -261,6 +347,15 @@ class SkipGramWord2Vec:
 
     @staticmethod
     def load_compressed_model(filename):
+        """
+        Loads a saved compressed model from a gzip file.
+
+        Parameters:
+        - filename (str): The name of the file to load the compressed model from.
+
+        Returns:
+        - model (SkipGramWord2Vec): The loaded SkipGramWord2Vec model.
+        """
         try:
             logging.info("Load compressed model")
             with gzip.open(filename, "rb") as file:

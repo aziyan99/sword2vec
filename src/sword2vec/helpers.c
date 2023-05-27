@@ -4,12 +4,12 @@
 {
     "distutils": {
         "depends": [],
-        "name": "src.sword2vec.helpers",
+        "name": "sword2vec.helpers",
         "sources": [
             "C:\\Users\\ezzy\\Workspace\\Kuliah\\Skripsi\\word2vec-package\\src/sword2vec/helpers.pyx"
         ]
     },
-    "module_name": "src.sword2vec.helpers"
+    "module_name": "sword2vec.helpers"
 }
 END: Cython Metadata */
 
@@ -755,8 +755,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__src__sword2vec__helpers
-#define __PYX_HAVE_API__src__sword2vec__helpers
+#define __PYX_HAVE__sword2vec__helpers
+#define __PYX_HAVE_API__sword2vec__helpers
 /* Early includes */
 #include <string.h>
 #include <stdio.h>
@@ -1755,12 +1755,12 @@ static PyTypeObject *__pyx_ptype_5numpy_flexible = 0;
 static PyTypeObject *__pyx_ptype_5numpy_character = 0;
 static PyTypeObject *__pyx_ptype_5numpy_ufunc = 0;
 
-/* Module declarations from 'src.sword2vec.helpers' */
-#define __Pyx_MODULE_NAME "src.sword2vec.helpers"
-extern int __pyx_module_is_main_src__sword2vec__helpers;
-int __pyx_module_is_main_src__sword2vec__helpers = 0;
+/* Module declarations from 'sword2vec.helpers' */
+#define __Pyx_MODULE_NAME "sword2vec.helpers"
+extern int __pyx_module_is_main_sword2vec__helpers;
+int __pyx_module_is_main_sword2vec__helpers = 0;
 
-/* Implementation of 'src.sword2vec.helpers' */
+/* Implementation of 'sword2vec.helpers' */
 static PyObject *__pyx_builtin_ImportError;
 static const char __pyx_k_T[] = "T";
 static const char __pyx_k_h[] = "h";
@@ -1809,8 +1809,8 @@ static const char __pyx_k_forward_pass[] = "forward_pass";
 static const char __pyx_k_learning_rate[] = "learning_rate";
 static const char __pyx_k_backpropagation[] = "backpropagation";
 static const char __pyx_k_cosine_similarity[] = "cosine_similarity";
+static const char __pyx_k_sword2vec_helpers[] = "sword2vec.helpers";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
-static const char __pyx_k_src_sword2vec_helpers[] = "src.sword2vec.helpers";
 static const char __pyx_k_src_sword2vec_helpers_pyx[] = "src\\sword2vec\\helpers.pyx";
 static const char __pyx_k_numpy_core_multiarray_failed_to[] = "numpy.core.multiarray failed to import";
 static const char __pyx_k_numpy_core_umath_failed_to_impor[] = "numpy.core.umath failed to import";
@@ -1852,10 +1852,10 @@ static PyObject *__pyx_n_s_outer;
 static PyObject *__pyx_n_s_similarity;
 static PyObject *__pyx_n_s_softmax;
 static PyObject *__pyx_n_s_softmax_sum;
-static PyObject *__pyx_n_s_src_sword2vec_helpers;
 static PyObject *__pyx_kp_s_src_sword2vec_helpers_pyx;
 static PyObject *__pyx_n_s_subtract;
 static PyObject *__pyx_n_s_sum;
+static PyObject *__pyx_n_s_sword2vec_helpers;
 static PyObject *__pyx_n_s_test;
 static PyObject *__pyx_n_s_u;
 static PyObject *__pyx_n_s_u_exp;
@@ -1866,13 +1866,13 @@ static PyObject *__pyx_n_s_w2;
 static PyObject *__pyx_n_s_w_c;
 static PyObject *__pyx_n_s_word;
 static PyObject *__pyx_n_s_wt;
-static PyObject *__pyx_pf_3src_9sword2vec_7helpers_softmax(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_u); /* proto */
-static PyObject *__pyx_pf_3src_9sword2vec_7helpers_2loss(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_w_c, PyObject *__pyx_v_u); /* proto */
-static PyObject *__pyx_pf_3src_9sword2vec_7helpers_4error(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_out, PyObject *__pyx_v_w_c); /* proto */
-static PyObject *__pyx_pf_3src_9sword2vec_7helpers_6forward_pass(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_wt, PyObject *__pyx_v_w1, PyObject *__pyx_v_w2); /* proto */
-static PyObject *__pyx_pf_3src_9sword2vec_7helpers_8learning(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_learning_rate, PyObject *__pyx_v_w1, PyObject *__pyx_v_w2, PyObject *__pyx_v_dw1, PyObject *__pyx_v_dw2); /* proto */
-static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_out, PyObject *__pyx_v_word, PyObject *__pyx_v_h, PyObject *__pyx_v_w2); /* proto */
-static PyObject *__pyx_pf_3src_9sword2vec_7helpers_12cosine_similarity(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_v1, PyObject *__pyx_v_v2); /* proto */
+static PyObject *__pyx_pf_9sword2vec_7helpers_softmax(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_u); /* proto */
+static PyObject *__pyx_pf_9sword2vec_7helpers_2loss(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_w_c, PyObject *__pyx_v_u); /* proto */
+static PyObject *__pyx_pf_9sword2vec_7helpers_4error(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_out, PyObject *__pyx_v_w_c); /* proto */
+static PyObject *__pyx_pf_9sword2vec_7helpers_6forward_pass(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_wt, PyObject *__pyx_v_w1, PyObject *__pyx_v_w2); /* proto */
+static PyObject *__pyx_pf_9sword2vec_7helpers_8learning(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_learning_rate, PyObject *__pyx_v_w1, PyObject *__pyx_v_w2, PyObject *__pyx_v_dw1, PyObject *__pyx_v_dw2); /* proto */
+static PyObject *__pyx_pf_9sword2vec_7helpers_10backpropagation(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_out, PyObject *__pyx_v_word, PyObject *__pyx_v_h, PyObject *__pyx_v_w2); /* proto */
+static PyObject *__pyx_pf_9sword2vec_7helpers_12cosine_similarity(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_v1, PyObject *__pyx_v_v2); /* proto */
 static PyObject *__pyx_int_0;
 static PyObject *__pyx_tuple_;
 static PyObject *__pyx_tuple__2;
@@ -1892,29 +1892,30 @@ static PyObject *__pyx_codeobj__14;
 static PyObject *__pyx_codeobj__16;
 /* Late includes */
 
-/* "src/sword2vec/helpers.pyx":4
+/* "sword2vec/helpers.pyx":4
  * cimport numpy as np
  * 
  * def softmax(u):             # <<<<<<<<<<<<<<
- *     exp_u = np.exp(u)
- *     return exp_u / np.sum(exp_u)
+ *     """
+ *     Computes the softmax of the given vector u.
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_3src_9sword2vec_7helpers_1softmax(PyObject *__pyx_self, PyObject *__pyx_v_u); /*proto*/
-static PyMethodDef __pyx_mdef_3src_9sword2vec_7helpers_1softmax = {"softmax", (PyCFunction)__pyx_pw_3src_9sword2vec_7helpers_1softmax, METH_O, 0};
-static PyObject *__pyx_pw_3src_9sword2vec_7helpers_1softmax(PyObject *__pyx_self, PyObject *__pyx_v_u) {
+static PyObject *__pyx_pw_9sword2vec_7helpers_1softmax(PyObject *__pyx_self, PyObject *__pyx_v_u); /*proto*/
+static char __pyx_doc_9sword2vec_7helpers_softmax[] = "\n    Computes the softmax of the given vector u.\n\n    Parameters:\n    - u: The input vector.\n\n    Returns:\n    - softmax_u: The softmax of the input vector.\n    ";
+static PyMethodDef __pyx_mdef_9sword2vec_7helpers_1softmax = {"softmax", (PyCFunction)__pyx_pw_9sword2vec_7helpers_1softmax, METH_O, __pyx_doc_9sword2vec_7helpers_softmax};
+static PyObject *__pyx_pw_9sword2vec_7helpers_1softmax(PyObject *__pyx_self, PyObject *__pyx_v_u) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("softmax (wrapper)", 0);
-  __pyx_r = __pyx_pf_3src_9sword2vec_7helpers_softmax(__pyx_self, ((PyObject *)__pyx_v_u));
+  __pyx_r = __pyx_pf_9sword2vec_7helpers_softmax(__pyx_self, ((PyObject *)__pyx_v_u));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_3src_9sword2vec_7helpers_softmax(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_u) {
+static PyObject *__pyx_pf_9sword2vec_7helpers_softmax(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_u) {
   PyObject *__pyx_v_exp_u = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -1926,16 +1927,16 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_softmax(CYTHON_UNUSED PyObjec
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("softmax", 0);
 
-  /* "src/sword2vec/helpers.pyx":5
+  /* "sword2vec/helpers.pyx":15
+ *     """
  * 
- * def softmax(u):
  *     exp_u = np.exp(u)             # <<<<<<<<<<<<<<
  *     return exp_u / np.sum(exp_u)
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 5, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_exp); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 5, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_exp); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -1950,23 +1951,23 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_softmax(CYTHON_UNUSED PyObjec
   }
   __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_v_u) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_u);
   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_exp_u = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "src/sword2vec/helpers.pyx":6
- * def softmax(u):
+  /* "sword2vec/helpers.pyx":16
+ * 
  *     exp_u = np.exp(u)
  *     return exp_u / np.sum(exp_u)             # <<<<<<<<<<<<<<
  * 
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 6, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_sum); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_sum); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -1981,22 +1982,22 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_softmax(CYTHON_UNUSED PyObjec
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, __pyx_v_exp_u) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_exp_u);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyNumber_Divide(__pyx_v_exp_u, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyNumber_Divide(__pyx_v_exp_u, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "src/sword2vec/helpers.pyx":4
+  /* "sword2vec/helpers.pyx":4
  * cimport numpy as np
  * 
  * def softmax(u):             # <<<<<<<<<<<<<<
- *     exp_u = np.exp(u)
- *     return exp_u / np.sum(exp_u)
+ *     """
+ *     Computes the softmax of the given vector u.
  */
 
   /* function exit code */
@@ -2004,7 +2005,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_softmax(CYTHON_UNUSED PyObjec
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("src.sword2vec.helpers.softmax", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sword2vec.helpers.softmax", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_exp_u);
@@ -2013,18 +2014,19 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_softmax(CYTHON_UNUSED PyObjec
   return __pyx_r;
 }
 
-/* "src/sword2vec/helpers.pyx":9
+/* "sword2vec/helpers.pyx":19
  * 
  * 
  * def loss(w_c, u):             # <<<<<<<<<<<<<<
- *     u_exp = np.exp(u)
- *     softmax_sum = np.sum(u_exp)
+ *     """
+ *     Computes the loss function given the context word vector w_c and the output vector u.
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_3src_9sword2vec_7helpers_3loss(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_3src_9sword2vec_7helpers_3loss = {"loss", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3src_9sword2vec_7helpers_3loss, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_3src_9sword2vec_7helpers_3loss(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9sword2vec_7helpers_3loss(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_9sword2vec_7helpers_2loss[] = "\n    Computes the loss function given the context word vector w_c and the output vector u.\n\n    Parameters:\n    - w_c: The context word vector.\n    - u: The output vector.\n\n    Returns:\n    - loss_value: The computed loss value.\n    ";
+static PyMethodDef __pyx_mdef_9sword2vec_7helpers_3loss = {"loss", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9sword2vec_7helpers_3loss, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9sword2vec_7helpers_2loss};
+static PyObject *__pyx_pw_9sword2vec_7helpers_3loss(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_w_c = 0;
   PyObject *__pyx_v_u = 0;
   int __pyx_lineno = 0;
@@ -2056,11 +2058,11 @@ static PyObject *__pyx_pw_3src_9sword2vec_7helpers_3loss(PyObject *__pyx_self, P
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_u)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("loss", 1, 2, 2, 1); __PYX_ERR(0, 9, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("loss", 1, 2, 2, 1); __PYX_ERR(0, 19, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "loss") < 0)) __PYX_ERR(0, 9, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "loss") < 0)) __PYX_ERR(0, 19, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -2073,20 +2075,20 @@ static PyObject *__pyx_pw_3src_9sword2vec_7helpers_3loss(PyObject *__pyx_self, P
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("loss", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 9, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("loss", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 19, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("src.sword2vec.helpers.loss", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sword2vec.helpers.loss", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_3src_9sword2vec_7helpers_2loss(__pyx_self, __pyx_v_w_c, __pyx_v_u);
+  __pyx_r = __pyx_pf_9sword2vec_7helpers_2loss(__pyx_self, __pyx_v_w_c, __pyx_v_u);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_3src_9sword2vec_7helpers_2loss(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_w_c, PyObject *__pyx_v_u) {
+static PyObject *__pyx_pf_9sword2vec_7helpers_2loss(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_w_c, PyObject *__pyx_v_u) {
   PyObject *__pyx_v_u_exp = NULL;
   PyObject *__pyx_v_softmax_sum = NULL;
   PyObject *__pyx_r = NULL;
@@ -2102,16 +2104,16 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_2loss(CYTHON_UNUSED PyObject 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("loss", 0);
 
-  /* "src/sword2vec/helpers.pyx":10
+  /* "sword2vec/helpers.pyx":31
+ *     """
  * 
- * def loss(w_c, u):
  *     u_exp = np.exp(u)             # <<<<<<<<<<<<<<
  *     softmax_sum = np.sum(u_exp)
  *     return -np.sum(w_c) + len(w_c) * np.log(softmax_sum)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_exp); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 10, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_exp); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -2126,22 +2128,22 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_2loss(CYTHON_UNUSED PyObject 
   }
   __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_v_u) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_u);
   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_u_exp = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "src/sword2vec/helpers.pyx":11
- * def loss(w_c, u):
+  /* "sword2vec/helpers.pyx":32
+ * 
  *     u_exp = np.exp(u)
  *     softmax_sum = np.sum(u_exp)             # <<<<<<<<<<<<<<
  *     return -np.sum(w_c) + len(w_c) * np.log(softmax_sum)
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_sum); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_sum); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -2156,13 +2158,13 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_2loss(CYTHON_UNUSED PyObject 
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, __pyx_v_u_exp) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_u_exp);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_softmax_sum = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "src/sword2vec/helpers.pyx":12
+  /* "sword2vec/helpers.pyx":33
  *     u_exp = np.exp(u)
  *     softmax_sum = np.sum(u_exp)
  *     return -np.sum(w_c) + len(w_c) * np.log(softmax_sum)             # <<<<<<<<<<<<<<
@@ -2170,9 +2172,9 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_2loss(CYTHON_UNUSED PyObject 
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_sum); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_sum); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -2187,18 +2189,18 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_2loss(CYTHON_UNUSED PyObject 
   }
   __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_v_w_c) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_w_c);
   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = PyNumber_Negative(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_3 = PyNumber_Negative(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_4 = PyObject_Length(__pyx_v_w_c); if (unlikely(__pyx_t_4 == ((Py_ssize_t)-1))) __PYX_ERR(0, 12, __pyx_L1_error)
-  __pyx_t_1 = PyInt_FromSsize_t(__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_4 = PyObject_Length(__pyx_v_w_c); if (unlikely(__pyx_t_4 == ((Py_ssize_t)-1))) __PYX_ERR(0, 33, __pyx_L1_error)
+  __pyx_t_1 = PyInt_FromSsize_t(__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_log); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_log); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_5 = NULL;
@@ -2213,14 +2215,14 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_2loss(CYTHON_UNUSED PyObject 
   }
   __pyx_t_2 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_5, __pyx_v_softmax_sum) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_softmax_sum);
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_6 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyNumber_Add(__pyx_t_3, __pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Add(__pyx_t_3, __pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -2228,12 +2230,12 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_2loss(CYTHON_UNUSED PyObject 
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "src/sword2vec/helpers.pyx":9
+  /* "sword2vec/helpers.pyx":19
  * 
  * 
  * def loss(w_c, u):             # <<<<<<<<<<<<<<
- *     u_exp = np.exp(u)
- *     softmax_sum = np.sum(u_exp)
+ *     """
+ *     Computes the loss function given the context word vector w_c and the output vector u.
  */
 
   /* function exit code */
@@ -2243,7 +2245,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_2loss(CYTHON_UNUSED PyObject 
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_AddTraceback("src.sword2vec.helpers.loss", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sword2vec.helpers.loss", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_u_exp);
@@ -2253,18 +2255,19 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_2loss(CYTHON_UNUSED PyObject 
   return __pyx_r;
 }
 
-/* "src/sword2vec/helpers.pyx":15
+/* "sword2vec/helpers.pyx":36
  * 
  * 
  * def error(out, w_c):             # <<<<<<<<<<<<<<
- *     return np.sum(np.subtract(out, w_c), axis=0)
- * 
+ *     """
+ *     Computes the error between the predicted output vector and the true context word vector.
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_3src_9sword2vec_7helpers_5error(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_3src_9sword2vec_7helpers_5error = {"error", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3src_9sword2vec_7helpers_5error, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_3src_9sword2vec_7helpers_5error(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9sword2vec_7helpers_5error(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_9sword2vec_7helpers_4error[] = "\n    Computes the error between the predicted output vector and the true context word vector.\n\n    Parameters:\n    - out: The predicted output vector.\n    - w_c: The true context word vector.\n\n    Returns:\n    - error_value: The computed error value.\n    ";
+static PyMethodDef __pyx_mdef_9sword2vec_7helpers_5error = {"error", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9sword2vec_7helpers_5error, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9sword2vec_7helpers_4error};
+static PyObject *__pyx_pw_9sword2vec_7helpers_5error(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_out = 0;
   PyObject *__pyx_v_w_c = 0;
   int __pyx_lineno = 0;
@@ -2296,11 +2299,11 @@ static PyObject *__pyx_pw_3src_9sword2vec_7helpers_5error(PyObject *__pyx_self, 
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_w_c)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("error", 1, 2, 2, 1); __PYX_ERR(0, 15, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("error", 1, 2, 2, 1); __PYX_ERR(0, 36, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "error") < 0)) __PYX_ERR(0, 15, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "error") < 0)) __PYX_ERR(0, 36, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -2313,20 +2316,20 @@ static PyObject *__pyx_pw_3src_9sword2vec_7helpers_5error(PyObject *__pyx_self, 
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("error", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 15, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("error", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 36, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("src.sword2vec.helpers.error", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sword2vec.helpers.error", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_3src_9sword2vec_7helpers_4error(__pyx_self, __pyx_v_out, __pyx_v_w_c);
+  __pyx_r = __pyx_pf_9sword2vec_7helpers_4error(__pyx_self, __pyx_v_out, __pyx_v_w_c);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_3src_9sword2vec_7helpers_4error(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_out, PyObject *__pyx_v_w_c) {
+static PyObject *__pyx_pf_9sword2vec_7helpers_4error(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_out, PyObject *__pyx_v_w_c) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2340,22 +2343,22 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_4error(CYTHON_UNUSED PyObject
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("error", 0);
 
-  /* "src/sword2vec/helpers.pyx":16
+  /* "sword2vec/helpers.pyx":48
+ *     """
  * 
- * def error(out, w_c):
  *     return np.sum(np.subtract(out, w_c), axis=0)             # <<<<<<<<<<<<<<
  * 
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_sum); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 16, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_sum); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 16, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_subtract); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 16, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_subtract); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -2373,7 +2376,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_4error(CYTHON_UNUSED PyObject
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_4)) {
     PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_v_out, __pyx_v_w_c};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else
@@ -2381,13 +2384,13 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_4error(CYTHON_UNUSED PyObject
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
     PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_v_out, __pyx_v_w_c};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else
   #endif
   {
-    __pyx_t_6 = PyTuple_New(2+__pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 16, __pyx_L1_error)
+    __pyx_t_6 = PyTuple_New(2+__pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 48, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     if (__pyx_t_3) {
       __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_3); __pyx_t_3 = NULL;
@@ -2398,20 +2401,20 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_4error(CYTHON_UNUSED PyObject
     __Pyx_INCREF(__pyx_v_w_c);
     __Pyx_GIVEREF(__pyx_v_w_c);
     PyTuple_SET_ITEM(__pyx_t_6, 1+__pyx_t_5, __pyx_v_w_c);
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 16, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_1);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_axis, __pyx_int_0) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
-  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 16, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_axis, __pyx_int_0) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -2420,12 +2423,12 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_4error(CYTHON_UNUSED PyObject
   __pyx_t_6 = 0;
   goto __pyx_L0;
 
-  /* "src/sword2vec/helpers.pyx":15
+  /* "sword2vec/helpers.pyx":36
  * 
  * 
  * def error(out, w_c):             # <<<<<<<<<<<<<<
- *     return np.sum(np.subtract(out, w_c), axis=0)
- * 
+ *     """
+ *     Computes the error between the predicted output vector and the true context word vector.
  */
 
   /* function exit code */
@@ -2435,7 +2438,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_4error(CYTHON_UNUSED PyObject
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_AddTraceback("src.sword2vec.helpers.error", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sword2vec.helpers.error", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2443,18 +2446,19 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_4error(CYTHON_UNUSED PyObject
   return __pyx_r;
 }
 
-/* "src/sword2vec/helpers.pyx":19
+/* "sword2vec/helpers.pyx":51
  * 
  * 
  * def forward_pass(wt, w1, w2):             # <<<<<<<<<<<<<<
- *     wt = np.array(wt)  # Convert to NumPy array
- *     h = np.dot(wt, w1)
+ *     """
+ *     Performs the forward pass of the word2vec model given the input word vector wt and the weights w1 and w2.
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_3src_9sword2vec_7helpers_7forward_pass(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_3src_9sword2vec_7helpers_7forward_pass = {"forward_pass", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3src_9sword2vec_7helpers_7forward_pass, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_3src_9sword2vec_7helpers_7forward_pass(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9sword2vec_7helpers_7forward_pass(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_9sword2vec_7helpers_6forward_pass[] = "\n    Performs the forward pass of the word2vec model given the input word vector wt and the weights w1 and w2.\n\n    Parameters:\n    - wt: The input word vector.\n    - w1: The weights of the hidden layer.\n    - w2: The weights of the output layer.\n\n    Returns:\n    - softmax_u: The softmax of the output vector u.\n    - h: The hidden layer activations.\n    - u: The output vector before softmax.\n    ";
+static PyMethodDef __pyx_mdef_9sword2vec_7helpers_7forward_pass = {"forward_pass", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9sword2vec_7helpers_7forward_pass, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9sword2vec_7helpers_6forward_pass};
+static PyObject *__pyx_pw_9sword2vec_7helpers_7forward_pass(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_wt = 0;
   PyObject *__pyx_v_w1 = 0;
   PyObject *__pyx_v_w2 = 0;
@@ -2489,17 +2493,17 @@ static PyObject *__pyx_pw_3src_9sword2vec_7helpers_7forward_pass(PyObject *__pyx
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_w1)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("forward_pass", 1, 3, 3, 1); __PYX_ERR(0, 19, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("forward_pass", 1, 3, 3, 1); __PYX_ERR(0, 51, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_w2)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("forward_pass", 1, 3, 3, 2); __PYX_ERR(0, 19, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("forward_pass", 1, 3, 3, 2); __PYX_ERR(0, 51, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "forward_pass") < 0)) __PYX_ERR(0, 19, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "forward_pass") < 0)) __PYX_ERR(0, 51, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -2514,20 +2518,20 @@ static PyObject *__pyx_pw_3src_9sword2vec_7helpers_7forward_pass(PyObject *__pyx
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("forward_pass", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 19, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("forward_pass", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 51, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("src.sword2vec.helpers.forward_pass", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sword2vec.helpers.forward_pass", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_3src_9sword2vec_7helpers_6forward_pass(__pyx_self, __pyx_v_wt, __pyx_v_w1, __pyx_v_w2);
+  __pyx_r = __pyx_pf_9sword2vec_7helpers_6forward_pass(__pyx_self, __pyx_v_wt, __pyx_v_w1, __pyx_v_w2);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_3src_9sword2vec_7helpers_6forward_pass(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_wt, PyObject *__pyx_v_w1, PyObject *__pyx_v_w2) {
+static PyObject *__pyx_pf_9sword2vec_7helpers_6forward_pass(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_wt, PyObject *__pyx_v_w1, PyObject *__pyx_v_w2) {
   PyObject *__pyx_v_h = NULL;
   PyObject *__pyx_v_u = NULL;
   PyObject *__pyx_r = NULL;
@@ -2543,16 +2547,16 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_6forward_pass(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("forward_pass", 0);
   __Pyx_INCREF(__pyx_v_wt);
 
-  /* "src/sword2vec/helpers.pyx":20
+  /* "sword2vec/helpers.pyx":66
+ *     """
  * 
- * def forward_pass(wt, w1, w2):
  *     wt = np.array(wt)  # Convert to NumPy array             # <<<<<<<<<<<<<<
  *     h = np.dot(wt, w1)
  *     u = np.dot(h, w2)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 20, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 66, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_array); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 20, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_array); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 66, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -2567,22 +2571,22 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_6forward_pass(CYTHON_UNUSED P
   }
   __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_v_wt) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_wt);
   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 66, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF_SET(__pyx_v_wt, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "src/sword2vec/helpers.pyx":21
- * def forward_pass(wt, w1, w2):
+  /* "sword2vec/helpers.pyx":67
+ * 
  *     wt = np.array(wt)  # Convert to NumPy array
  *     h = np.dot(wt, w1)             # <<<<<<<<<<<<<<
  *     u = np.dot(h, w2)
  *     return softmax(u), h, u
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 21, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_dot); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 21, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_dot); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -2600,7 +2604,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_6forward_pass(CYTHON_UNUSED P
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_v_wt, __pyx_v_w1};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 21, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else
@@ -2608,13 +2612,13 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_6forward_pass(CYTHON_UNUSED P
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_v_wt, __pyx_v_w1};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 21, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else
   #endif
   {
-    __pyx_t_5 = PyTuple_New(2+__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 21, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(2+__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     if (__pyx_t_3) {
       __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_3); __pyx_t_3 = NULL;
@@ -2625,7 +2629,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_6forward_pass(CYTHON_UNUSED P
     __Pyx_INCREF(__pyx_v_w1);
     __Pyx_GIVEREF(__pyx_v_w1);
     PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_4, __pyx_v_w1);
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 21, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   }
@@ -2633,16 +2637,16 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_6forward_pass(CYTHON_UNUSED P
   __pyx_v_h = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "src/sword2vec/helpers.pyx":22
+  /* "sword2vec/helpers.pyx":68
  *     wt = np.array(wt)  # Convert to NumPy array
  *     h = np.dot(wt, w1)
  *     u = np.dot(h, w2)             # <<<<<<<<<<<<<<
  *     return softmax(u), h, u
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 22, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_dot); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 22, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_dot); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -2660,7 +2664,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_6forward_pass(CYTHON_UNUSED P
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_5)) {
     PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_v_h, __pyx_v_w2};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 22, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 68, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else
@@ -2668,13 +2672,13 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_6forward_pass(CYTHON_UNUSED P
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
     PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_v_h, __pyx_v_w2};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 22, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 68, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else
   #endif
   {
-    __pyx_t_3 = PyTuple_New(2+__pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 22, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_New(2+__pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 68, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     if (__pyx_t_2) {
       __Pyx_GIVEREF(__pyx_t_2); PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2); __pyx_t_2 = NULL;
@@ -2685,7 +2689,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_6forward_pass(CYTHON_UNUSED P
     __Pyx_INCREF(__pyx_v_w2);
     __Pyx_GIVEREF(__pyx_v_w2);
     PyTuple_SET_ITEM(__pyx_t_3, 1+__pyx_t_4, __pyx_v_w2);
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 22, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 68, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
@@ -2693,7 +2697,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_6forward_pass(CYTHON_UNUSED P
   __pyx_v_u = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "src/sword2vec/helpers.pyx":23
+  /* "sword2vec/helpers.pyx":69
  *     h = np.dot(wt, w1)
  *     u = np.dot(h, w2)
  *     return softmax(u), h, u             # <<<<<<<<<<<<<<
@@ -2701,7 +2705,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_6forward_pass(CYTHON_UNUSED P
  * def learning(learning_rate, w1, w2, dw1, dw2):
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_softmax); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 23, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_softmax); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
@@ -2715,10 +2719,10 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_6forward_pass(CYTHON_UNUSED P
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_3, __pyx_v_u) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_u);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 23, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 23, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_1);
@@ -2733,12 +2737,12 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_6forward_pass(CYTHON_UNUSED P
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "src/sword2vec/helpers.pyx":19
+  /* "sword2vec/helpers.pyx":51
  * 
  * 
  * def forward_pass(wt, w1, w2):             # <<<<<<<<<<<<<<
- *     wt = np.array(wt)  # Convert to NumPy array
- *     h = np.dot(wt, w1)
+ *     """
+ *     Performs the forward pass of the word2vec model given the input word vector wt and the weights w1 and w2.
  */
 
   /* function exit code */
@@ -2747,7 +2751,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_6forward_pass(CYTHON_UNUSED P
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("src.sword2vec.helpers.forward_pass", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sword2vec.helpers.forward_pass", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_h);
@@ -2758,18 +2762,19 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_6forward_pass(CYTHON_UNUSED P
   return __pyx_r;
 }
 
-/* "src/sword2vec/helpers.pyx":25
+/* "sword2vec/helpers.pyx":71
  *     return softmax(u), h, u
  * 
  * def learning(learning_rate, w1, w2, dw1, dw2):             # <<<<<<<<<<<<<<
- *     w1 -= learning_rate * dw1
- *     w2 -= learning_rate * dw2
+ *     """
+ *     Performs the weight update step during the learning process.
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_3src_9sword2vec_7helpers_9learning(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_3src_9sword2vec_7helpers_9learning = {"learning", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3src_9sword2vec_7helpers_9learning, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_3src_9sword2vec_7helpers_9learning(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9sword2vec_7helpers_9learning(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_9sword2vec_7helpers_8learning[] = "\n    Performs the weight update step during the learning process.\n\n    Parameters:\n    - learning_rate: The learning rate.\n    - w1: The weights of the hidden layer.\n    - w2: The weights of the output layer.\n    - dw1: The gradients of the hidden layer weights.\n    - dw2: The gradients of the output layer weights.\n\n    Returns:\n    - w1: The updated weights of the hidden layer.\n    - w2: The updated weights of the output layer.\n    ";
+static PyMethodDef __pyx_mdef_9sword2vec_7helpers_9learning = {"learning", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9sword2vec_7helpers_9learning, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9sword2vec_7helpers_8learning};
+static PyObject *__pyx_pw_9sword2vec_7helpers_9learning(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_learning_rate = 0;
   PyObject *__pyx_v_w1 = 0;
   PyObject *__pyx_v_w2 = 0;
@@ -2810,29 +2815,29 @@ static PyObject *__pyx_pw_3src_9sword2vec_7helpers_9learning(PyObject *__pyx_sel
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_w1)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("learning", 1, 5, 5, 1); __PYX_ERR(0, 25, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("learning", 1, 5, 5, 1); __PYX_ERR(0, 71, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_w2)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("learning", 1, 5, 5, 2); __PYX_ERR(0, 25, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("learning", 1, 5, 5, 2); __PYX_ERR(0, 71, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_dw1)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("learning", 1, 5, 5, 3); __PYX_ERR(0, 25, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("learning", 1, 5, 5, 3); __PYX_ERR(0, 71, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
         if (likely((values[4] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_dw2)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("learning", 1, 5, 5, 4); __PYX_ERR(0, 25, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("learning", 1, 5, 5, 4); __PYX_ERR(0, 71, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "learning") < 0)) __PYX_ERR(0, 25, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "learning") < 0)) __PYX_ERR(0, 71, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 5) {
       goto __pyx_L5_argtuple_error;
@@ -2851,20 +2856,20 @@ static PyObject *__pyx_pw_3src_9sword2vec_7helpers_9learning(PyObject *__pyx_sel
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("learning", 1, 5, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 25, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("learning", 1, 5, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 71, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("src.sword2vec.helpers.learning", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sword2vec.helpers.learning", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_3src_9sword2vec_7helpers_8learning(__pyx_self, __pyx_v_learning_rate, __pyx_v_w1, __pyx_v_w2, __pyx_v_dw1, __pyx_v_dw2);
+  __pyx_r = __pyx_pf_9sword2vec_7helpers_8learning(__pyx_self, __pyx_v_learning_rate, __pyx_v_w1, __pyx_v_w2, __pyx_v_dw1, __pyx_v_dw2);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_3src_9sword2vec_7helpers_8learning(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_learning_rate, PyObject *__pyx_v_w1, PyObject *__pyx_v_w2, PyObject *__pyx_v_dw1, PyObject *__pyx_v_dw2) {
+static PyObject *__pyx_pf_9sword2vec_7helpers_8learning(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_learning_rate, PyObject *__pyx_v_w1, PyObject *__pyx_v_w2, PyObject *__pyx_v_dw1, PyObject *__pyx_v_dw2) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2876,37 +2881,37 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_8learning(CYTHON_UNUSED PyObj
   __Pyx_INCREF(__pyx_v_w1);
   __Pyx_INCREF(__pyx_v_w2);
 
-  /* "src/sword2vec/helpers.pyx":26
+  /* "sword2vec/helpers.pyx":87
+ *     """
  * 
- * def learning(learning_rate, w1, w2, dw1, dw2):
  *     w1 -= learning_rate * dw1             # <<<<<<<<<<<<<<
  *     w2 -= learning_rate * dw2
  *     return w1, w2
  */
-  __pyx_t_1 = PyNumber_Multiply(__pyx_v_learning_rate, __pyx_v_dw1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 26, __pyx_L1_error)
+  __pyx_t_1 = PyNumber_Multiply(__pyx_v_learning_rate, __pyx_v_dw1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyNumber_InPlaceSubtract(__pyx_v_w1, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 26, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_InPlaceSubtract(__pyx_v_w1, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF_SET(__pyx_v_w1, __pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "src/sword2vec/helpers.pyx":27
- * def learning(learning_rate, w1, w2, dw1, dw2):
+  /* "sword2vec/helpers.pyx":88
+ * 
  *     w1 -= learning_rate * dw1
  *     w2 -= learning_rate * dw2             # <<<<<<<<<<<<<<
  *     return w1, w2
  * 
  */
-  __pyx_t_2 = PyNumber_Multiply(__pyx_v_learning_rate, __pyx_v_dw2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 27, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Multiply(__pyx_v_learning_rate, __pyx_v_dw2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 88, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_InPlaceSubtract(__pyx_v_w2, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 27, __pyx_L1_error)
+  __pyx_t_1 = PyNumber_InPlaceSubtract(__pyx_v_w2, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 88, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF_SET(__pyx_v_w2, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "src/sword2vec/helpers.pyx":28
+  /* "sword2vec/helpers.pyx":89
  *     w1 -= learning_rate * dw1
  *     w2 -= learning_rate * dw2
  *     return w1, w2             # <<<<<<<<<<<<<<
@@ -2914,7 +2919,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_8learning(CYTHON_UNUSED PyObj
  * def backpropagation(out, word, h, w2):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 89, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_v_w1);
   __Pyx_GIVEREF(__pyx_v_w1);
@@ -2926,19 +2931,19 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_8learning(CYTHON_UNUSED PyObj
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "src/sword2vec/helpers.pyx":25
+  /* "sword2vec/helpers.pyx":71
  *     return softmax(u), h, u
  * 
  * def learning(learning_rate, w1, w2, dw1, dw2):             # <<<<<<<<<<<<<<
- *     w1 -= learning_rate * dw1
- *     w2 -= learning_rate * dw2
+ *     """
+ *     Performs the weight update step during the learning process.
  */
 
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("src.sword2vec.helpers.learning", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sword2vec.helpers.learning", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_w1);
@@ -2948,18 +2953,19 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_8learning(CYTHON_UNUSED PyObj
   return __pyx_r;
 }
 
-/* "src/sword2vec/helpers.pyx":30
+/* "sword2vec/helpers.pyx":91
  *     return w1, w2
  * 
  * def backpropagation(out, word, h, w2):             # <<<<<<<<<<<<<<
- *     err = error(out, word[1]).T
- *     dw2 = np.outer(err, h)
+ *     """
+ *     Performs backpropagation to compute the gradients of the weights.
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_3src_9sword2vec_7helpers_11backpropagation(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_3src_9sword2vec_7helpers_11backpropagation = {"backpropagation", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3src_9sword2vec_7helpers_11backpropagation, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_3src_9sword2vec_7helpers_11backpropagation(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9sword2vec_7helpers_11backpropagation(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_9sword2vec_7helpers_10backpropagation[] = "\n    Performs backpropagation to compute the gradients of the weights.\n\n    Parameters:\n    - out: The predicted output vector.\n    - word: The input word and its corresponding context word vector.\n    - h: The hidden layer activations.\n    - w2: The weights of the output layer.\n\n    Returns:\n    - dw1: The gradients of the hidden layer weights.\n    - dw2: The gradients of the output layer weights.\n    ";
+static PyMethodDef __pyx_mdef_9sword2vec_7helpers_11backpropagation = {"backpropagation", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9sword2vec_7helpers_11backpropagation, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9sword2vec_7helpers_10backpropagation};
+static PyObject *__pyx_pw_9sword2vec_7helpers_11backpropagation(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_out = 0;
   PyObject *__pyx_v_word = 0;
   PyObject *__pyx_v_h = 0;
@@ -2997,23 +3003,23 @@ static PyObject *__pyx_pw_3src_9sword2vec_7helpers_11backpropagation(PyObject *_
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_word)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("backpropagation", 1, 4, 4, 1); __PYX_ERR(0, 30, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("backpropagation", 1, 4, 4, 1); __PYX_ERR(0, 91, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_h)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("backpropagation", 1, 4, 4, 2); __PYX_ERR(0, 30, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("backpropagation", 1, 4, 4, 2); __PYX_ERR(0, 91, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_w2)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("backpropagation", 1, 4, 4, 3); __PYX_ERR(0, 30, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("backpropagation", 1, 4, 4, 3); __PYX_ERR(0, 91, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "backpropagation") < 0)) __PYX_ERR(0, 30, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "backpropagation") < 0)) __PYX_ERR(0, 91, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 4) {
       goto __pyx_L5_argtuple_error;
@@ -3030,20 +3036,20 @@ static PyObject *__pyx_pw_3src_9sword2vec_7helpers_11backpropagation(PyObject *_
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("backpropagation", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 30, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("backpropagation", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 91, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("src.sword2vec.helpers.backpropagation", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sword2vec.helpers.backpropagation", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_3src_9sword2vec_7helpers_10backpropagation(__pyx_self, __pyx_v_out, __pyx_v_word, __pyx_v_h, __pyx_v_w2);
+  __pyx_r = __pyx_pf_9sword2vec_7helpers_10backpropagation(__pyx_self, __pyx_v_out, __pyx_v_word, __pyx_v_h, __pyx_v_w2);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_out, PyObject *__pyx_v_word, PyObject *__pyx_v_h, PyObject *__pyx_v_w2) {
+static PyObject *__pyx_pf_9sword2vec_7helpers_10backpropagation(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_out, PyObject *__pyx_v_word, PyObject *__pyx_v_h, PyObject *__pyx_v_w2) {
   PyObject *__pyx_v_err = NULL;
   PyObject *__pyx_v_dw2 = NULL;
   PyObject *__pyx_v_EH = NULL;
@@ -3062,16 +3068,16 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUS
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("backpropagation", 0);
 
-  /* "src/sword2vec/helpers.pyx":31
+  /* "sword2vec/helpers.pyx":106
+ *     """
  * 
- * def backpropagation(out, word, h, w2):
  *     err = error(out, word[1]).T             # <<<<<<<<<<<<<<
  *     dw2 = np.outer(err, h)
  *     EH = np.dot(err, w2.T)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_error); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_error); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 106, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_GetItemInt(__pyx_v_word, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_GetItemInt(__pyx_v_word, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 106, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   __pyx_t_5 = 0;
@@ -3088,7 +3094,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUS
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_out, __pyx_t_3};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 106, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -3097,14 +3103,14 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUS
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_out, __pyx_t_3};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 106, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   } else
   #endif
   {
-    __pyx_t_6 = PyTuple_New(2+__pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 31, __pyx_L1_error)
+    __pyx_t_6 = PyTuple_New(2+__pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 106, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     if (__pyx_t_4) {
       __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_4); __pyx_t_4 = NULL;
@@ -3115,27 +3121,27 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUS
     __Pyx_GIVEREF(__pyx_t_3);
     PyTuple_SET_ITEM(__pyx_t_6, 1+__pyx_t_5, __pyx_t_3);
     __pyx_t_3 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 106, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_T); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_T); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 106, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_err = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "src/sword2vec/helpers.pyx":32
- * def backpropagation(out, word, h, w2):
+  /* "sword2vec/helpers.pyx":107
+ * 
  *     err = error(out, word[1]).T
  *     dw2 = np.outer(err, h)             # <<<<<<<<<<<<<<
  *     EH = np.dot(err, w2.T)
  *     dw1 = np.outer(EH, np.array(word[0]).T)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_outer); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_outer); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_1 = NULL;
@@ -3153,7 +3159,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUS
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_6)) {
     PyObject *__pyx_temp[3] = {__pyx_t_1, __pyx_v_err, __pyx_v_h};
-    __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 32, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 107, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_GOTREF(__pyx_t_2);
   } else
@@ -3161,13 +3167,13 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUS
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_6)) {
     PyObject *__pyx_temp[3] = {__pyx_t_1, __pyx_v_err, __pyx_v_h};
-    __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 32, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 107, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_GOTREF(__pyx_t_2);
   } else
   #endif
   {
-    __pyx_t_3 = PyTuple_New(2+__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 32, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_New(2+__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 107, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     if (__pyx_t_1) {
       __Pyx_GIVEREF(__pyx_t_1); PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1); __pyx_t_1 = NULL;
@@ -3178,7 +3184,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUS
     __Pyx_INCREF(__pyx_v_h);
     __Pyx_GIVEREF(__pyx_v_h);
     PyTuple_SET_ITEM(__pyx_t_3, 1+__pyx_t_5, __pyx_v_h);
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 32, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 107, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
@@ -3186,19 +3192,19 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUS
   __pyx_v_dw2 = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "src/sword2vec/helpers.pyx":33
+  /* "sword2vec/helpers.pyx":108
  *     err = error(out, word[1]).T
  *     dw2 = np.outer(err, h)
  *     EH = np.dot(err, w2.T)             # <<<<<<<<<<<<<<
  *     dw1 = np.outer(EH, np.array(word[0]).T)
  *     return dw1.T, dw2.T
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 33, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 108, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_dot); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 33, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_dot); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 108, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_w2, __pyx_n_s_T); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 33, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_w2, __pyx_n_s_T); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 108, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_1 = NULL;
   __pyx_t_5 = 0;
@@ -3215,7 +3221,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUS
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_3)) {
     PyObject *__pyx_temp[3] = {__pyx_t_1, __pyx_v_err, __pyx_t_6};
-    __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -3224,14 +3230,14 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUS
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
     PyObject *__pyx_temp[3] = {__pyx_t_1, __pyx_v_err, __pyx_t_6};
-    __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   } else
   #endif
   {
-    __pyx_t_4 = PyTuple_New(2+__pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 33, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(2+__pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     if (__pyx_t_1) {
       __Pyx_GIVEREF(__pyx_t_1); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_1); __pyx_t_1 = NULL;
@@ -3242,7 +3248,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUS
     __Pyx_GIVEREF(__pyx_t_6);
     PyTuple_SET_ITEM(__pyx_t_4, 1+__pyx_t_5, __pyx_t_6);
     __pyx_t_6 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   }
@@ -3250,24 +3256,24 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUS
   __pyx_v_EH = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "src/sword2vec/helpers.pyx":34
+  /* "sword2vec/helpers.pyx":109
  *     dw2 = np.outer(err, h)
  *     EH = np.dot(err, w2.T)
  *     dw1 = np.outer(EH, np.array(word[0]).T)             # <<<<<<<<<<<<<<
  *     return dw1.T, dw2.T
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_outer); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_outer); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_array); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_array); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_GetItemInt(__pyx_v_word, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_GetItemInt(__pyx_v_word, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_7 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_1))) {
@@ -3282,10 +3288,10 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUS
   __pyx_t_3 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_7, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 34, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_T); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_T); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -3303,7 +3309,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUS
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_4)) {
     PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_v_EH, __pyx_t_1};
-    __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 34, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -3312,14 +3318,14 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUS
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
     PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_v_EH, __pyx_t_1};
-    __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 34, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   } else
   #endif
   {
-    __pyx_t_6 = PyTuple_New(2+__pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 34, __pyx_L1_error)
+    __pyx_t_6 = PyTuple_New(2+__pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     if (__pyx_t_3) {
       __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_3); __pyx_t_3 = NULL;
@@ -3330,7 +3336,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUS
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_6, 1+__pyx_t_5, __pyx_t_1);
     __pyx_t_1 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 34, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   }
@@ -3338,7 +3344,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUS
   __pyx_v_dw1 = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "src/sword2vec/helpers.pyx":35
+  /* "sword2vec/helpers.pyx":110
  *     EH = np.dot(err, w2.T)
  *     dw1 = np.outer(EH, np.array(word[0]).T)
  *     return dw1.T, dw2.T             # <<<<<<<<<<<<<<
@@ -3346,11 +3352,11 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUS
  * def cosine_similarity(v1, v2):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_dw1, __pyx_n_s_T); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 35, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_dw1, __pyx_n_s_T); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_dw2, __pyx_n_s_T); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 35, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_dw2, __pyx_n_s_T); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_6 = PyTuple_New(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 35, __pyx_L1_error)
+  __pyx_t_6 = PyTuple_New(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_2);
@@ -3362,12 +3368,12 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUS
   __pyx_t_6 = 0;
   goto __pyx_L0;
 
-  /* "src/sword2vec/helpers.pyx":30
+  /* "sword2vec/helpers.pyx":91
  *     return w1, w2
  * 
  * def backpropagation(out, word, h, w2):             # <<<<<<<<<<<<<<
- *     err = error(out, word[1]).T
- *     dw2 = np.outer(err, h)
+ *     """
+ *     Performs backpropagation to compute the gradients of the weights.
  */
 
   /* function exit code */
@@ -3378,7 +3384,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUS
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("src.sword2vec.helpers.backpropagation", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sword2vec.helpers.backpropagation", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_err);
@@ -3390,18 +3396,19 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_10backpropagation(CYTHON_UNUS
   return __pyx_r;
 }
 
-/* "src/sword2vec/helpers.pyx":37
+/* "sword2vec/helpers.pyx":112
  *     return dw1.T, dw2.T
  * 
  * def cosine_similarity(v1, v2):             # <<<<<<<<<<<<<<
- *     dot_product = np.dot(v1, v2)
- *     norm_v1 = np.linalg.norm(v1)
+ *     """
+ *     Computes the cosine similarity between two vectors.
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_3src_9sword2vec_7helpers_13cosine_similarity(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_3src_9sword2vec_7helpers_13cosine_similarity = {"cosine_similarity", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_3src_9sword2vec_7helpers_13cosine_similarity, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_3src_9sword2vec_7helpers_13cosine_similarity(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9sword2vec_7helpers_13cosine_similarity(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_9sword2vec_7helpers_12cosine_similarity[] = "\n    Computes the cosine similarity between two vectors.\n\n    Parameters:\n    - v1: The first vector.\n    - v2: The second vector.\n\n    Returns:\n    - similarity: The cosine similarity between the two vectors.\n    ";
+static PyMethodDef __pyx_mdef_9sword2vec_7helpers_13cosine_similarity = {"cosine_similarity", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_9sword2vec_7helpers_13cosine_similarity, METH_VARARGS|METH_KEYWORDS, __pyx_doc_9sword2vec_7helpers_12cosine_similarity};
+static PyObject *__pyx_pw_9sword2vec_7helpers_13cosine_similarity(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_v1 = 0;
   PyObject *__pyx_v_v2 = 0;
   int __pyx_lineno = 0;
@@ -3433,11 +3440,11 @@ static PyObject *__pyx_pw_3src_9sword2vec_7helpers_13cosine_similarity(PyObject 
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_v2)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cosine_similarity", 1, 2, 2, 1); __PYX_ERR(0, 37, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cosine_similarity", 1, 2, 2, 1); __PYX_ERR(0, 112, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cosine_similarity") < 0)) __PYX_ERR(0, 37, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cosine_similarity") < 0)) __PYX_ERR(0, 112, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -3450,20 +3457,20 @@ static PyObject *__pyx_pw_3src_9sword2vec_7helpers_13cosine_similarity(PyObject 
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("cosine_similarity", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 37, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("cosine_similarity", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 112, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("src.sword2vec.helpers.cosine_similarity", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sword2vec.helpers.cosine_similarity", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_3src_9sword2vec_7helpers_12cosine_similarity(__pyx_self, __pyx_v_v1, __pyx_v_v2);
+  __pyx_r = __pyx_pf_9sword2vec_7helpers_12cosine_similarity(__pyx_self, __pyx_v_v1, __pyx_v_v2);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_3src_9sword2vec_7helpers_12cosine_similarity(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_v1, PyObject *__pyx_v_v2) {
+static PyObject *__pyx_pf_9sword2vec_7helpers_12cosine_similarity(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_v1, PyObject *__pyx_v_v2) {
   PyObject *__pyx_v_dot_product = NULL;
   PyObject *__pyx_v_norm_v1 = NULL;
   PyObject *__pyx_v_norm_v2 = NULL;
@@ -3480,16 +3487,16 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_12cosine_similarity(CYTHON_UN
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("cosine_similarity", 0);
 
-  /* "src/sword2vec/helpers.pyx":38
+  /* "sword2vec/helpers.pyx":124
+ *     """
  * 
- * def cosine_similarity(v1, v2):
  *     dot_product = np.dot(v1, v2)             # <<<<<<<<<<<<<<
  *     norm_v1 = np.linalg.norm(v1)
  *     norm_v2 = np.linalg.norm(v2)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 38, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 124, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_dot); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 38, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_dot); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 124, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -3507,7 +3514,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_12cosine_similarity(CYTHON_UN
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_3)) {
     PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_v_v1, __pyx_v_v2};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 38, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 124, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else
@@ -3515,13 +3522,13 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_12cosine_similarity(CYTHON_UN
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
     PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_v_v1, __pyx_v_v2};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 38, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_4, 2+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 124, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else
   #endif
   {
-    __pyx_t_5 = PyTuple_New(2+__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 38, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(2+__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 124, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     if (__pyx_t_2) {
       __Pyx_GIVEREF(__pyx_t_2); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_2); __pyx_t_2 = NULL;
@@ -3532,7 +3539,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_12cosine_similarity(CYTHON_UN
     __Pyx_INCREF(__pyx_v_v2);
     __Pyx_GIVEREF(__pyx_v_v2);
     PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_4, __pyx_v_v2);
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 38, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 124, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   }
@@ -3540,19 +3547,19 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_12cosine_similarity(CYTHON_UN
   __pyx_v_dot_product = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "src/sword2vec/helpers.pyx":39
- * def cosine_similarity(v1, v2):
+  /* "sword2vec/helpers.pyx":125
+ * 
  *     dot_product = np.dot(v1, v2)
  *     norm_v1 = np.linalg.norm(v1)             # <<<<<<<<<<<<<<
  *     norm_v2 = np.linalg.norm(v2)
  *     similarity = dot_product / (norm_v1 * norm_v2)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 39, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 125, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_linalg); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 39, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_linalg); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 125, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_norm); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 39, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_norm); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 125, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_5 = NULL;
@@ -3567,25 +3574,25 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_12cosine_similarity(CYTHON_UN
   }
   __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_5, __pyx_v_v1) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_v1);
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 39, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 125, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_norm_v1 = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "src/sword2vec/helpers.pyx":40
+  /* "sword2vec/helpers.pyx":126
  *     dot_product = np.dot(v1, v2)
  *     norm_v1 = np.linalg.norm(v1)
  *     norm_v2 = np.linalg.norm(v2)             # <<<<<<<<<<<<<<
  *     similarity = dot_product / (norm_v1 * norm_v2)
  *     return similarity
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 126, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_linalg); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_linalg); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 126, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_norm); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_norm); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 126, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_5 = NULL;
@@ -3600,27 +3607,27 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_12cosine_similarity(CYTHON_UN
   }
   __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_5, __pyx_v_v2) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_v2);
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 126, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_norm_v2 = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "src/sword2vec/helpers.pyx":41
+  /* "sword2vec/helpers.pyx":127
  *     norm_v1 = np.linalg.norm(v1)
  *     norm_v2 = np.linalg.norm(v2)
  *     similarity = dot_product / (norm_v1 * norm_v2)             # <<<<<<<<<<<<<<
  *     return similarity
  */
-  __pyx_t_1 = PyNumber_Multiply(__pyx_v_norm_v1, __pyx_v_norm_v2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 41, __pyx_L1_error)
+  __pyx_t_1 = PyNumber_Multiply(__pyx_v_norm_v1, __pyx_v_norm_v2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyNumber_Divide(__pyx_v_dot_product, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 41, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyNumber_Divide(__pyx_v_dot_product, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_similarity = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "src/sword2vec/helpers.pyx":42
+  /* "sword2vec/helpers.pyx":128
  *     norm_v2 = np.linalg.norm(v2)
  *     similarity = dot_product / (norm_v1 * norm_v2)
  *     return similarity             # <<<<<<<<<<<<<<
@@ -3630,12 +3637,12 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_12cosine_similarity(CYTHON_UN
   __pyx_r = __pyx_v_similarity;
   goto __pyx_L0;
 
-  /* "src/sword2vec/helpers.pyx":37
+  /* "sword2vec/helpers.pyx":112
  *     return dw1.T, dw2.T
  * 
  * def cosine_similarity(v1, v2):             # <<<<<<<<<<<<<<
- *     dot_product = np.dot(v1, v2)
- *     norm_v1 = np.linalg.norm(v1)
+ *     """
+ *     Computes the cosine similarity between two vectors.
  */
 
   /* function exit code */
@@ -3644,7 +3651,7 @@ static PyObject *__pyx_pf_3src_9sword2vec_7helpers_12cosine_similarity(CYTHON_UN
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("src.sword2vec.helpers.cosine_similarity", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sword2vec.helpers.cosine_similarity", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_dot_product);
@@ -4757,10 +4764,10 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_similarity, __pyx_k_similarity, sizeof(__pyx_k_similarity), 0, 0, 1, 1},
   {&__pyx_n_s_softmax, __pyx_k_softmax, sizeof(__pyx_k_softmax), 0, 0, 1, 1},
   {&__pyx_n_s_softmax_sum, __pyx_k_softmax_sum, sizeof(__pyx_k_softmax_sum), 0, 0, 1, 1},
-  {&__pyx_n_s_src_sword2vec_helpers, __pyx_k_src_sword2vec_helpers, sizeof(__pyx_k_src_sword2vec_helpers), 0, 0, 1, 1},
   {&__pyx_kp_s_src_sword2vec_helpers_pyx, __pyx_k_src_sword2vec_helpers_pyx, sizeof(__pyx_k_src_sword2vec_helpers_pyx), 0, 0, 1, 0},
   {&__pyx_n_s_subtract, __pyx_k_subtract, sizeof(__pyx_k_subtract), 0, 0, 1, 1},
   {&__pyx_n_s_sum, __pyx_k_sum, sizeof(__pyx_k_sum), 0, 0, 1, 1},
+  {&__pyx_n_s_sword2vec_helpers, __pyx_k_sword2vec_helpers, sizeof(__pyx_k_sword2vec_helpers), 0, 0, 1, 1},
   {&__pyx_n_s_test, __pyx_k_test, sizeof(__pyx_k_test), 0, 0, 1, 1},
   {&__pyx_n_s_u, __pyx_k_u, sizeof(__pyx_k_u), 0, 0, 1, 1},
   {&__pyx_n_s_u_exp, __pyx_k_u_exp, sizeof(__pyx_k_u_exp), 0, 0, 1, 1},
@@ -4806,89 +4813,89 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
-  /* "src/sword2vec/helpers.pyx":4
+  /* "sword2vec/helpers.pyx":4
  * cimport numpy as np
  * 
  * def softmax(u):             # <<<<<<<<<<<<<<
- *     exp_u = np.exp(u)
- *     return exp_u / np.sum(exp_u)
+ *     """
+ *     Computes the softmax of the given vector u.
  */
   __pyx_tuple__3 = PyTuple_Pack(2, __pyx_n_s_u, __pyx_n_s_exp_u); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
   __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sword2vec_helpers_pyx, __pyx_n_s_softmax, 4, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 4, __pyx_L1_error)
 
-  /* "src/sword2vec/helpers.pyx":9
+  /* "sword2vec/helpers.pyx":19
  * 
  * 
  * def loss(w_c, u):             # <<<<<<<<<<<<<<
- *     u_exp = np.exp(u)
- *     softmax_sum = np.sum(u_exp)
+ *     """
+ *     Computes the loss function given the context word vector w_c and the output vector u.
  */
-  __pyx_tuple__5 = PyTuple_Pack(4, __pyx_n_s_w_c, __pyx_n_s_u, __pyx_n_s_u_exp, __pyx_n_s_softmax_sum); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 9, __pyx_L1_error)
+  __pyx_tuple__5 = PyTuple_Pack(4, __pyx_n_s_w_c, __pyx_n_s_u, __pyx_n_s_u_exp, __pyx_n_s_softmax_sum); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
-  __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sword2vec_helpers_pyx, __pyx_n_s_loss, 9, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 9, __pyx_L1_error)
+  __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sword2vec_helpers_pyx, __pyx_n_s_loss, 19, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 19, __pyx_L1_error)
 
-  /* "src/sword2vec/helpers.pyx":15
+  /* "sword2vec/helpers.pyx":36
  * 
  * 
  * def error(out, w_c):             # <<<<<<<<<<<<<<
- *     return np.sum(np.subtract(out, w_c), axis=0)
- * 
+ *     """
+ *     Computes the error between the predicted output vector and the true context word vector.
  */
-  __pyx_tuple__7 = PyTuple_Pack(2, __pyx_n_s_out, __pyx_n_s_w_c); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __pyx_tuple__7 = PyTuple_Pack(2, __pyx_n_s_out, __pyx_n_s_w_c); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
-  __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sword2vec_helpers_pyx, __pyx_n_s_error, 15, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sword2vec_helpers_pyx, __pyx_n_s_error, 36, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 36, __pyx_L1_error)
 
-  /* "src/sword2vec/helpers.pyx":19
+  /* "sword2vec/helpers.pyx":51
  * 
  * 
  * def forward_pass(wt, w1, w2):             # <<<<<<<<<<<<<<
- *     wt = np.array(wt)  # Convert to NumPy array
- *     h = np.dot(wt, w1)
+ *     """
+ *     Performs the forward pass of the word2vec model given the input word vector wt and the weights w1 and w2.
  */
-  __pyx_tuple__9 = PyTuple_Pack(5, __pyx_n_s_wt, __pyx_n_s_w1, __pyx_n_s_w2, __pyx_n_s_h, __pyx_n_s_u); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 19, __pyx_L1_error)
+  __pyx_tuple__9 = PyTuple_Pack(5, __pyx_n_s_wt, __pyx_n_s_w1, __pyx_n_s_w2, __pyx_n_s_h, __pyx_n_s_u); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
-  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sword2vec_helpers_pyx, __pyx_n_s_forward_pass, 19, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 19, __pyx_L1_error)
+  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sword2vec_helpers_pyx, __pyx_n_s_forward_pass, 51, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 51, __pyx_L1_error)
 
-  /* "src/sword2vec/helpers.pyx":25
+  /* "sword2vec/helpers.pyx":71
  *     return softmax(u), h, u
  * 
  * def learning(learning_rate, w1, w2, dw1, dw2):             # <<<<<<<<<<<<<<
- *     w1 -= learning_rate * dw1
- *     w2 -= learning_rate * dw2
+ *     """
+ *     Performs the weight update step during the learning process.
  */
-  __pyx_tuple__11 = PyTuple_Pack(5, __pyx_n_s_learning_rate, __pyx_n_s_w1, __pyx_n_s_w2, __pyx_n_s_dw1, __pyx_n_s_dw2); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 25, __pyx_L1_error)
+  __pyx_tuple__11 = PyTuple_Pack(5, __pyx_n_s_learning_rate, __pyx_n_s_w1, __pyx_n_s_w2, __pyx_n_s_dw1, __pyx_n_s_dw2); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
-  __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(5, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sword2vec_helpers_pyx, __pyx_n_s_learning, 25, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 25, __pyx_L1_error)
+  __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(5, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sword2vec_helpers_pyx, __pyx_n_s_learning, 71, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 71, __pyx_L1_error)
 
-  /* "src/sword2vec/helpers.pyx":30
+  /* "sword2vec/helpers.pyx":91
  *     return w1, w2
  * 
  * def backpropagation(out, word, h, w2):             # <<<<<<<<<<<<<<
- *     err = error(out, word[1]).T
- *     dw2 = np.outer(err, h)
+ *     """
+ *     Performs backpropagation to compute the gradients of the weights.
  */
-  __pyx_tuple__13 = PyTuple_Pack(8, __pyx_n_s_out, __pyx_n_s_word, __pyx_n_s_h, __pyx_n_s_w2, __pyx_n_s_err, __pyx_n_s_dw2, __pyx_n_s_EH, __pyx_n_s_dw1); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_tuple__13 = PyTuple_Pack(8, __pyx_n_s_out, __pyx_n_s_word, __pyx_n_s_h, __pyx_n_s_w2, __pyx_n_s_err, __pyx_n_s_dw2, __pyx_n_s_EH, __pyx_n_s_dw1); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__13);
   __Pyx_GIVEREF(__pyx_tuple__13);
-  __pyx_codeobj__14 = (PyObject*)__Pyx_PyCode_New(4, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__13, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sword2vec_helpers_pyx, __pyx_n_s_backpropagation, 30, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__14)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_codeobj__14 = (PyObject*)__Pyx_PyCode_New(4, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__13, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sword2vec_helpers_pyx, __pyx_n_s_backpropagation, 91, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__14)) __PYX_ERR(0, 91, __pyx_L1_error)
 
-  /* "src/sword2vec/helpers.pyx":37
+  /* "sword2vec/helpers.pyx":112
  *     return dw1.T, dw2.T
  * 
  * def cosine_similarity(v1, v2):             # <<<<<<<<<<<<<<
- *     dot_product = np.dot(v1, v2)
- *     norm_v1 = np.linalg.norm(v1)
+ *     """
+ *     Computes the cosine similarity between two vectors.
  */
-  __pyx_tuple__15 = PyTuple_Pack(6, __pyx_n_s_v1, __pyx_n_s_v2, __pyx_n_s_dot_product, __pyx_n_s_norm_v1, __pyx_n_s_norm_v2, __pyx_n_s_similarity); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 37, __pyx_L1_error)
+  __pyx_tuple__15 = PyTuple_Pack(6, __pyx_n_s_v1, __pyx_n_s_v2, __pyx_n_s_dot_product, __pyx_n_s_norm_v1, __pyx_n_s_norm_v2, __pyx_n_s_similarity); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__15);
   __Pyx_GIVEREF(__pyx_tuple__15);
-  __pyx_codeobj__16 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__15, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sword2vec_helpers_pyx, __pyx_n_s_cosine_similarity, 37, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__16)) __PYX_ERR(0, 37, __pyx_L1_error)
+  __pyx_codeobj__16 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__15, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sword2vec_helpers_pyx, __pyx_n_s_cosine_similarity, 112, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__16)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -5176,14 +5183,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_src__sword2vec__helpers) {
+  if (__pyx_module_is_main_sword2vec__helpers) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "src.sword2vec.helpers")) {
-      if (unlikely(PyDict_SetItemString(modules, "src.sword2vec.helpers", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "sword2vec.helpers")) {
+      if (unlikely(PyDict_SetItemString(modules, "sword2vec.helpers", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -5204,7 +5211,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "src/sword2vec/helpers.pyx":1
+  /* "sword2vec/helpers.pyx":1
  * import numpy as np             # <<<<<<<<<<<<<<
  * cimport numpy as np
  * 
@@ -5214,91 +5221,91 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "src/sword2vec/helpers.pyx":4
+  /* "sword2vec/helpers.pyx":4
  * cimport numpy as np
  * 
  * def softmax(u):             # <<<<<<<<<<<<<<
- *     exp_u = np.exp(u)
- *     return exp_u / np.sum(exp_u)
+ *     """
+ *     Computes the softmax of the given vector u.
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_3src_9sword2vec_7helpers_1softmax, NULL, __pyx_n_s_src_sword2vec_helpers); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_9sword2vec_7helpers_1softmax, NULL, __pyx_n_s_sword2vec_helpers); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_softmax, __pyx_t_1) < 0) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "src/sword2vec/helpers.pyx":9
+  /* "sword2vec/helpers.pyx":19
  * 
  * 
  * def loss(w_c, u):             # <<<<<<<<<<<<<<
- *     u_exp = np.exp(u)
- *     softmax_sum = np.sum(u_exp)
+ *     """
+ *     Computes the loss function given the context word vector w_c and the output vector u.
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_3src_9sword2vec_7helpers_3loss, NULL, __pyx_n_s_src_sword2vec_helpers); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_9sword2vec_7helpers_3loss, NULL, __pyx_n_s_sword2vec_helpers); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_loss, __pyx_t_1) < 0) __PYX_ERR(0, 9, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_loss, __pyx_t_1) < 0) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "src/sword2vec/helpers.pyx":15
+  /* "sword2vec/helpers.pyx":36
  * 
  * 
  * def error(out, w_c):             # <<<<<<<<<<<<<<
- *     return np.sum(np.subtract(out, w_c), axis=0)
- * 
+ *     """
+ *     Computes the error between the predicted output vector and the true context word vector.
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_3src_9sword2vec_7helpers_5error, NULL, __pyx_n_s_src_sword2vec_helpers); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_9sword2vec_7helpers_5error, NULL, __pyx_n_s_sword2vec_helpers); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_error, __pyx_t_1) < 0) __PYX_ERR(0, 15, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_error, __pyx_t_1) < 0) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "src/sword2vec/helpers.pyx":19
+  /* "sword2vec/helpers.pyx":51
  * 
  * 
  * def forward_pass(wt, w1, w2):             # <<<<<<<<<<<<<<
- *     wt = np.array(wt)  # Convert to NumPy array
- *     h = np.dot(wt, w1)
+ *     """
+ *     Performs the forward pass of the word2vec model given the input word vector wt and the weights w1 and w2.
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_3src_9sword2vec_7helpers_7forward_pass, NULL, __pyx_n_s_src_sword2vec_helpers); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_9sword2vec_7helpers_7forward_pass, NULL, __pyx_n_s_sword2vec_helpers); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_forward_pass, __pyx_t_1) < 0) __PYX_ERR(0, 19, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_forward_pass, __pyx_t_1) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "src/sword2vec/helpers.pyx":25
+  /* "sword2vec/helpers.pyx":71
  *     return softmax(u), h, u
  * 
  * def learning(learning_rate, w1, w2, dw1, dw2):             # <<<<<<<<<<<<<<
- *     w1 -= learning_rate * dw1
- *     w2 -= learning_rate * dw2
+ *     """
+ *     Performs the weight update step during the learning process.
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_3src_9sword2vec_7helpers_9learning, NULL, __pyx_n_s_src_sword2vec_helpers); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 25, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_9sword2vec_7helpers_9learning, NULL, __pyx_n_s_sword2vec_helpers); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_learning, __pyx_t_1) < 0) __PYX_ERR(0, 25, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_learning, __pyx_t_1) < 0) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "src/sword2vec/helpers.pyx":30
+  /* "sword2vec/helpers.pyx":91
  *     return w1, w2
  * 
  * def backpropagation(out, word, h, w2):             # <<<<<<<<<<<<<<
- *     err = error(out, word[1]).T
- *     dw2 = np.outer(err, h)
+ *     """
+ *     Performs backpropagation to compute the gradients of the weights.
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_3src_9sword2vec_7helpers_11backpropagation, NULL, __pyx_n_s_src_sword2vec_helpers); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_9sword2vec_7helpers_11backpropagation, NULL, __pyx_n_s_sword2vec_helpers); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_backpropagation, __pyx_t_1) < 0) __PYX_ERR(0, 30, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_backpropagation, __pyx_t_1) < 0) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "src/sword2vec/helpers.pyx":37
+  /* "sword2vec/helpers.pyx":112
  *     return dw1.T, dw2.T
  * 
  * def cosine_similarity(v1, v2):             # <<<<<<<<<<<<<<
- *     dot_product = np.dot(v1, v2)
- *     norm_v1 = np.linalg.norm(v1)
+ *     """
+ *     Computes the cosine similarity between two vectors.
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_3src_9sword2vec_7helpers_13cosine_similarity, NULL, __pyx_n_s_src_sword2vec_helpers); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 37, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_9sword2vec_7helpers_13cosine_similarity, NULL, __pyx_n_s_sword2vec_helpers); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_cosine_similarity, __pyx_t_1) < 0) __PYX_ERR(0, 37, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_cosine_similarity, __pyx_t_1) < 0) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "src/sword2vec/helpers.pyx":1
+  /* "sword2vec/helpers.pyx":1
  * import numpy as np             # <<<<<<<<<<<<<<
  * cimport numpy as np
  * 
@@ -5323,11 +5330,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_1);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init src.sword2vec.helpers", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init sword2vec.helpers", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init src.sword2vec.helpers");
+    PyErr_SetString(PyExc_ImportError, "init sword2vec.helpers");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
