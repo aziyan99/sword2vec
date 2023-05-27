@@ -16,7 +16,7 @@ extensions = [
 
 setup(
     name="sword2vec",
-    version="3.2.1-dev",
+    version="3.2.1-beta",
     author="Raja Azian",
     author_email="rajaazian08@gmail.com",
     description="A simple skipgram word2vec implementations",
