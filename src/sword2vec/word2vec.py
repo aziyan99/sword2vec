@@ -1,14 +1,14 @@
 import logging
 
 import numpy as np
-from preprocess.preprocessor import (
+from .preprocessor import (
     Preprocessor,
     Tokenizer,
     StopWordRemover,
     LowerCaser,
 )
 
-logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
+logging.basicConfig(format="%(asctime)s - %(message)s", level=logging.INFO)
 
 import datetime
 import time
@@ -46,7 +46,7 @@ class SkipGramWord2Vec:
         )
 
     def preprocess_vocab(self, lines):
-        logging.info('Preprocessing vocabularies')
+        logging.info("Preprocessing vocabularies")
         for title in lines:
             tokens = self.preprocessor.preprocess(title)
             for word in tokens:
@@ -55,7 +55,7 @@ class SkipGramWord2Vec:
     def build_vocab(self, text_array):
         self.word_to_idx = {}
         self.idx_to_word = {}
-        logging.info('Building vocabularies')
+        logging.info("Building vocabularies")
         for idx, word in enumerate(text_array):
             if word not in self.word_to_idx:
                 self.word_to_idx[word] = len(self.word_to_idx)
@@ -63,7 +63,7 @@ class SkipGramWord2Vec:
         self.vocabulary = list(self.word_to_idx.keys())
 
     def one_hot_encoding(self, text_array):
-        logging.info('Building matrix')
+        logging.info("Building matrix")
         for idx, word in enumerate(text_array):
             center_vec = [0] * len(self.word_to_idx)
             center_vec[self.word_to_idx[word]] = 1
@@ -71,10 +71,10 @@ class SkipGramWord2Vec:
             context_vec = []
             for i in range(-self.window_size, self.window_size + 1):
                 if (
-                        i == 0
-                        or idx + i < 0
-                        or idx + i >= len(text_array)
-                        or word == text_array[idx + i]
+                    i == 0
+                    or idx + i < 0
+                    or idx + i >= len(text_array)
+                    or word == text_array[idx + i]
                 ):
                     continue
 
@@ -94,7 +94,7 @@ class SkipGramWord2Vec:
                 (context_idxs != idx)
                 & (context_idxs >= 0)
                 & (context_idxs < len(text_array))
-                ]
+            ]
             context_vec = np.zeros((len(context_idxs), len(self.word_to_idx)))
             context_vec[
                 np.arange(len(context_idxs)),
@@ -128,17 +128,17 @@ class SkipGramWord2Vec:
             np.random.uniform(-1, 1, (self.embedding_dim, len(self.word_to_idx))), 2
         )
 
-        logging.info('Training')
+        logging.info("Training")
 
         try:
             for e in range(self.epochs):
                 total_loss = 0
                 start_time = time.time()
 
-                logging.info(f'Epoch {e + 1} start')
+                logging.info(f"Epoch {e + 1} start")
 
                 for center_vec, context_vec in self.one_hot_encoding_streamable(
-                        self.vocabulary
+                    self.vocabulary
                 ):
                     word = [center_vec, context_vec]
                     out, h, u = helpers.forward_pass(word[0], self.w1, self.w2)
@@ -150,7 +150,9 @@ class SkipGramWord2Vec:
 
                 self.history[e] = total_loss
 
-                logging.info(f'Epoch {e + 1} Execution Time: {time.time() - start_time} seconds')
+                logging.info(
+                    f"Epoch {e + 1} Execution Time: {time.time() - start_time} seconds"
+                )
 
         except KeyboardInterrupt:
             print("\nTraining interrupted by user.")
@@ -179,7 +181,7 @@ class SkipGramWord2Vec:
             similarities = np.array(similarities)
 
             # Get the indices of the most similar words (excluding the search word)
-            similar_word_indices = similarities.argsort()[-(topn + 1): -1][::-1]
+            similar_word_indices = similarities.argsort()[-(topn + 1) : -1][::-1]
 
             # Create a dictionary of {word: score} pairs
             similar_words = {}
@@ -188,10 +190,10 @@ class SkipGramWord2Vec:
 
             return similar_words
         except KeyError:
-            logging.warning(f'{word}\'s unknown.')
+            logging.warning(f"{word}'s unknown.")
 
     def save_model(self, filename=None):
-        logging.info('Saving model')
+        logging.info("Saving model")
         if filename is None:
             current_time = datetime.datetime.now().strftime("%Y%m%d%H%M")
             filename = f"{current_time}.pkl"
@@ -214,7 +216,7 @@ class SkipGramWord2Vec:
             pickle.dump(model_data, file)
 
     def save_compressed_model(self, filename=None):
-        logging.info('Saving compressed model')
+        logging.info("Saving compressed model")
         gc.disable()
         if filename is None:
             current_time = datetime.datetime.now().strftime("%Y%m%d%H%M")
@@ -240,7 +242,7 @@ class SkipGramWord2Vec:
     @staticmethod
     def load_model(filename):
         try:
-            logging.info('Load model')
+            logging.info("Load model")
             with open(filename, "rb") as file:
                 model_data = pickle.load(file)
 
@@ -260,12 +262,12 @@ class SkipGramWord2Vec:
 
             return model
         except FileNotFoundError:
-            logging.warning(f'{filename}\'s unknown.')
+            logging.warning(f"{filename}'s unknown.")
 
     @staticmethod
     def load_compressed_model(filename):
         try:
-            logging.info('Load compressed model')
+            logging.info("Load compressed model")
             with gzip.open(filename, "rb") as file:
                 model_data = pickle.load(file)
 
@@ -285,4 +287,4 @@ class SkipGramWord2Vec:
 
             return model
         except FileNotFoundError:
-            logging.warning(f'{filename}\'s unknown.')
+            logging.warning(f"{filename}'s unknown.")

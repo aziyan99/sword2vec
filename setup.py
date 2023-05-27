@@ -1,21 +1,16 @@
-import setuptools
-from Cython.Build import cythonize
+from setuptools import setup, find_packages
 import numpy
 import os
+from Cython.Build import cythonize
 
-basedir = os.path.dirname(os.path.realpath(__file__))
+basdir = os.path.dirname(os.path.realpath(__file__))
+
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-extensions = [
-    setuptools.Extension(
-        "sword2vec.helpers",
-        [os.path.join(basedir, "src/sword2vec/utils/helpers.pyx")],
-    )
-]
 
-setuptools.setup(
+setup(
     name="sword2vec",
     version="0.0.1",
     author="Raja Azian",
@@ -30,16 +25,17 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.11",
-    packages=setuptools.find_packages(),
-    ext_modules=cythonize(extensions),
-    install_require=[
-        "click==8.1.3",
-        "colorama==0.4.6",
+    package_dir={"": "src"},
+    packages=find_packages(where="src"),
+    install_requires=[
         "Cython==0.29.35",
         "joblib==1.2.0",
         "nltk==3.8.1",
         "numpy==1.24.3",
-        "regex==2023.5.5",
     ],
+    extras_require={
+        "dev": ["pytest>=7.0", "twine>=4.0.2"],
+    },
+    ext_modules=cythonize(os.path.join(basdir, "src/sword2vec/helpers.pyx")),
     include_dirs=[numpy.get_include()],
 )
