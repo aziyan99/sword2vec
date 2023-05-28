@@ -15,6 +15,7 @@ import time
 import gzip
 import gc
 import pickle
+import pickletools
 from . import helpers
 
 np.random.seed(1)
@@ -221,13 +222,16 @@ class SkipGramWord2Vec:
         - word (str): The target word for prediction.
         - topn (int): The number of top words to return. Default is 2.
         """
-        word = word.lower()
-        center_vec = [0] * len(self.word_to_idx)
-        center_vec[self.word_to_idx[word]] = 1
+        try:
+            word = word.lower()
+            center_vec = [0] * len(self.word_to_idx)
+            center_vec[self.word_to_idx[word]] = 1
 
-        out, _, _ = helpers.forward_pass(center_vec, self.w1, self.w2)
-        most_likely_idxs = np.array(out).argsort()[-topn:][::-1]
-        return [self.idx_to_word[w] for w in most_likely_idxs]
+            out, _, _ = helpers.forward_pass(center_vec, self.w1, self.w2)
+            most_likely_idxs = np.array(out).argsort()[-topn:][::-1]
+            return [self.idx_to_word[w] for w in most_likely_idxs]
+        except KeyError:
+            logging.warning(f"{word}'s unknown.")
 
     def search_similar_words(self, word, topn=10):
         """
@@ -237,7 +241,8 @@ class SkipGramWord2Vec:
         - word (str): The word to search for similar words.
         - topn (int): The number of top similar words to return. Default is 10.
         """
-        try:
+        similar_words = {}
+        if self.word_to_idx.get(word):
             word_embedding = self.w1[self.word_to_idx[word]]
             word_embeddings = self.w1
 
@@ -252,13 +257,13 @@ class SkipGramWord2Vec:
             similar_word_indices = similarities.argsort()[-(topn + 1) : -1][::-1]
 
             # Create a dictionary of {word: score} pairs
-            similar_words = {}
             for idx in similar_word_indices:
                 similar_words[self.idx_to_word[idx]] = similarities[idx]
 
             return similar_words
-        except KeyError:
+        else:
             logging.warning(f"{word}'s unknown.")
+            return similar_words
 
     def save_model(self, filename=None):
         """
@@ -317,7 +322,8 @@ class SkipGramWord2Vec:
         }
 
         with gzip.open(filename, "wb") as file:
-            pickle.dump(model_data, file, protocol=-1)
+            optimized_pickled = pickletools.optimize(pickle.dumps(model_data))
+            file.write(optimized_pickled)
 
     @staticmethod
     def load_model(filename):
@@ -367,7 +373,8 @@ class SkipGramWord2Vec:
         try:
             logging.info("| Load compressed model")
             with gzip.open(filename, "rb") as file:
-                model_data = pickle.load(file)
+                p = pickle.Unpickler(file=file)
+                model_data = p.load()
 
             model = SkipGramWord2Vec(
                 window_size=model_data["window_size"],
