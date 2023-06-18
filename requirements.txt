@@ -31,7 +31,6 @@ requests-toolbelt==1.0.0
 rfc3986==2.0.0
 rich==13.3.5
 six==1.16.0
-sword2vec @ file:///C:/Users/ezzy/Workspace/Kuliah/Skripsi/word2vec-package
 tqdm==4.65.0
 twine==4.0.2
 urllib3==2.0.2
