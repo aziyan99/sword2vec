@@ -16,7 +16,7 @@ extensions = [
 
 setup(
     name="sword2vec",
-    version="3.3.7",
+    version="3.4.7",
     author="Raja Azian",
     author_email="rajaazian08@gmail.com",
     description="A simple skipgram word2vec implementations",
@@ -28,7 +28,7 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires=">=3.10",
+    python_requires=">=3.8",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
     install_requires=[
